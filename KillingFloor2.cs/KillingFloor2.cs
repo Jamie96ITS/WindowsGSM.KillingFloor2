@@ -62,10 +62,10 @@ namespace WindowsGSM.Plugins
 
             // Prepare start parameter
             string param = string.IsNullOrWhiteSpace(_serverData.ServerMap) ? string.Empty : $" {_serverData.ServerMap}";
-            param += string.IsNullOrWhiteSpace(_serverData.ServerIP) ? string.Empty : $"?MultiHome={_serverData.ServerIP}";
-            param += string.IsNullOrWhiteSpace(_serverData.ServerPort) ? string.Empty : $"?Port={_serverData.ServerPort}";
-			param += string.IsNullOrWhiteSpace(_serverData.ServerQueryPort) ? string.Empty : $"?QueryPort={_serverData.ServerQueryPort}";
-            param += $"{_serverData.ServerParam}";
+            param += string.IsNullOrWhiteSpace(_serverData.ServerIP) ? string.Empty : $" -MultiHome={_serverData.ServerIP}";
+            param += string.IsNullOrWhiteSpace(_serverData.ServerPort) ? string.Empty : $" -Port={_serverData.ServerPort}";
+			param += string.IsNullOrWhiteSpace(_serverData.ServerQueryPort) ? string.Empty : $" -QueryPort={_serverData.ServerQueryPort}";
+            param += $" {_serverData.ServerParam}";
 			
 			// Saw this in another plugin from Kickbut101. Comment on it is right, this was useful. 
             // Output the startupcommands used. Helpful for troubleshooting server commands and testing them out - leaving this in because it's helpful af.	
