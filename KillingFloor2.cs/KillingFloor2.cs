@@ -18,7 +18,7 @@ namespace WindowsGSM.Plugins
             name = "WindowsGSM.KillingFloor2", // WindowsGSM.XXXX
             author = "Jamie96ITS",
             description = "WindowsGSM plugin for supporting KillingFloor2 Dedicated Server",
-            version = "1.0",
+            version = "1.1",
             url = "https://github.com/Jamie96ITS/WindowsGSM.KillingFloor2", // Github repository link (Best practice)
             color = "#FF0000" // Color Hex
         };
